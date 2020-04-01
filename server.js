@@ -38,4 +38,4 @@ app.get('*', (req, res) => {
     }
 });
 
-server.listen(port, console.log(`SERVER LISTENING PORT: ${ port }`));
+app.listen(port, console.log(`SERVER LISTENING PORT: ${ port }`));
