@@ -1,0 +1,159 @@
+{{> head }}
+<link rel="stylesheet" href="assets/css/leaflet.css">
+
+<main id="ts-content">
+
+
+    <div class="container-fluid px-0">
+        <div class="row">
+
+            <!--Map
+            ========================================================================================================
+            -->
+            <div class="col-md-6 ">
+                <section class="map h-100 w-100" id="map-contact"></section>
+            </div>
+
+            <!--Contact
+            ========================================================================================================
+            -->
+            <div class="col-md-6">
+                <section class="p-3 p-sm-5">
+
+                    <header class="mb-5">
+                        <div class="ts-title">
+                            <h1 class="ts-text-underline">Contáctanos</h1>
+                        </div>
+
+                        <p>
+                            Somos una empresa abierta a todo tipo de proyectos, nos gustaría colaborar contigo
+                        </p>
+                    </header>
+
+                    <section class="mb-5">
+                        <div class="row">
+
+                            <div class="col-md-6">
+                                <div class="ts-title mb-5">
+                                    <h2>Dirección</h2>
+                                </div>
+                                <address>
+                                    México
+                                    <br>
+                                    CDMX
+                                    <br>
+                                    <br>
+                                    <strong>Tel: </strong> 55-71-77-79-17
+                                    <br>
+                                    <strong>Email: </strong> <a href="#">liberatosoftware@gmail.com</a>
+                                    <br>
+                                </address>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="ts-title mb-5">
+                                    <h2>Social</h2>
+                                </div>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a href="https://www.facebook.com/Liberato-Software-2250071058613479">
+                                            <i class="fab fa-facebook-square mr-2"></i>
+                                            Facebook
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.youtube.com/channel/UC54PE6L9KngQVtntTxoZh5g">
+                                            <i class="fab fa-youtube-square mr-2"></i>
+                                            Youtube
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </section>
+
+                    <section>
+                        <div class="ts-title mb-5">
+                            <h2>Escríbenos</h2>
+                        </div>
+                        <form id="form-contact" method="post" class="clearfix ts-form ts-form-email" data-php-path="assets/php/email.php">
+
+                            <!--Row-->
+                            <div class="row">
+
+                                <!--Name-->
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="form-group">
+                                        <label for="form-contact-name">Nombre *</label>
+                                        <input type="text" class="form-control" id="form-contact-name" name="name" placeholder="Tu nombre" requerido>
+                                    </div>
+                                </div>
+
+                                <!--Email-->
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="form-group">
+                                        <label for="form-contact-email">Email *</label>
+                                        <input type="email" class="form-control" id="form-contact-email" name="email" placeholder="Tu Email" requerido>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!--end row -->
+
+                            <!--Subject-->
+                            <div class="form-group">
+                                <label for="form-contact-subject">Asunto *</label>
+                                <input type="text" class="form-control" id="form-contact-subject" name="subject" placeholder="Asunto" requerido>
+                            </div>
+
+                            <!--Message-->
+                            <div class="form-group">
+                                <label for="form-contact-message">Mensaje *</label>
+                                <textarea class="form-control" id="form-contact-message" rows="5" name="message" placeholder="Tu Mensaje" requerido></textarea>
+                            </div>
+
+                            <!--Submit button-->
+                            <div class="form-group clearfix">
+                                <button type="submit" class="btn btn-primary float-right" id="form-contact-submit">Enviar mensaje</button>
+                            </div>
+
+                            <div class="form-contact-status"></div>
+
+                        </form>
+                        <!--end form-contact -->
+                    </section>
+
+                </section>
+            </div>
+
+        </div>
+    </div>
+
+</main>
+
+<script src="assets/js/leaflet.js"></script>
+
+ <script>
+    var latitude = 19.504948;
+    var longitude = -99.1460089;
+    var markerImage = "assets/img/map-marker.png";
+    var mapElement = "map-contact";
+
+    var map = L.map(mapElement).setView([latitude, longitude], 14);
+
+    L.tileLayer('http://{s}.tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+
+    var markerIcon = L.icon({
+        iconUrl: markerImage,
+        iconSize: [28, 38],
+        iconAnchor: [14, 38]
+    });
+
+    L.marker([latitude, longitude],{icon: markerIcon}).addTo(map);
+
+</script>
+
+{{> footer }}
