@@ -29,13 +29,10 @@ app.get('/ilaw', (req, res) => res.render('projects/ilaw'));
 
 app.get('*', (req, res) => {
     const host = req.headers.host;
-    console.log('HOST:' + host);
-    switch (host) {
-        case 'gerardoarceo':
-            res.render('gerardoarceo');
-        default:
-            res.render('home');
-    }
+    if (host.includes('gerardoarceo'))
+        res.render('gerardoarceo');
+    else
+        res.render('home');
 });
 
 app.listen(port, console.log(`SERVER LISTENING PORT: ${ port }`));
