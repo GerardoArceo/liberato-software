@@ -27,6 +27,16 @@ app.get('/lienzourbano', (req, res) => res.render('projects/lienzourbano'));
 app.get('/lietoapp', (req, res) => res.render('projects/lietoapp'));
 app.get('/ilaw', (req, res) => res.render('projects/ilaw'));
 
+app.get('*', (req, res) => {
+    const host = req.headers.host;
+    switch (host) {
+        case 'gerardoarceo.com':
+            res.render('gerardoarceo');
+        default:
+            res.render('home');
+    }
+});
+
 console.log(`SERVER LISTENING IN PORT ${port}`);
 if (process.env.NODE_ENV === 'dev') {
     app.listen(port);
