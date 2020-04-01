@@ -7,6 +7,7 @@ const app = express();
 const hbs = require('hbs');
 require('./hbs/helpers');
 
+const port = 3002;
 
 app.use(express.static(__dirname + '/public'));
 
@@ -37,11 +38,11 @@ app.get('*', (req, res) => {
 });
 
 if (process.env.NODE_ENV === 'dev') {
-    app.listen(80);
+    app.listen(port);
 } else {
     https.createServer({
         key: fs.readFileSync('/home/bitnami/private/private.key'),
         cert: fs.readFileSync('/home/bitnami/private/certificate.crt')
-    }, app).listen(443);
+    }, app).listen(port);
 }
 console.log(`SERVER IS LISTENING`);

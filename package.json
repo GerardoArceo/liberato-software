@@ -12,7 +12,7 @@
     "license": "ISC",
     "dependencies": {
         "express": "^4.16.2",
-        "hbs": "^4.0.1",
+        "hbs": "^4.1.0",
         "http-server": "^0.12.1"
     }
 }
