@@ -29,22 +29,13 @@ app.get('/ilaw', (req, res) => res.render('projects/ilaw'));
 
 app.get('*', (req, res) => {
     const host = req.headers.host;
+    console.log('HOST:' + host);
     switch (host) {
-        case 'gerardoarceo.com':
+        case 'gerardoarceo':
             res.render('gerardoarceo');
         default:
             res.render('home');
     }
 });
 
-console.log(`SERVER LISTENING IN PORT ${port}`);
-if (process.env.NODE_ENV === 'dev') {
-    app.listen(port);
-    console.log('DEVELOPMENT MODE');
-} else {
-    https.createServer({
-        key: fs.readFileSync('/home/bitnami/private/private.key'),
-        cert: fs.readFileSync('/home/bitnami/private/certificate.crt')
-    }, app).listen(port);
-    console.log('PRODUCTION MODE');
-}
+server.listen(port, console.log(`SERVER LISTENING PORT: ${ port }`));
