@@ -14,7 +14,6 @@ app.set('view engine', 'hbs');
 
 app.get('/home', (req, res) => res.render('home'));
 app.get('/development', (req, res) => res.render('development'));
-app.get('/gerardoarceo', (req, res) => res.render('gerardoarceo'));
 app.get('/contact', (req, res) => res.render('contact'));
 app.get('/team', (req, res) => res.render('team'));
 app.get('/blog', (req, res) => res.render('blog'));
@@ -24,10 +23,21 @@ app.get('/projects/lienzourbano', (req, res) => res.render('projects/lienzourban
 app.get('/projects/lietoapp', (req, res) => res.render('projects/lietoapp'));
 app.get('/projects/ilaw', (req, res) => res.render('projects/ilaw'));
 
+app.get('/team/gerardoarceo', (req, res) => res.render('team/gerardoarceo'));
+app.get('/team/lilianarceo', (req, res) => res.render('team/lilianarceo'));
+app.get('/team/marcocelaya', (req, res) => res.render('team/marcocelaya'));
+app.get('/team/pamelaperez', (req, res) => res.render('team/pamelaperez'));
+
 app.get('*', (req, res) => {
     const host = req.headers.host;
     if (host.includes('gerardoarceo'))
-        res.render('gerardoarceo');
+        res.render('team/gerardoarceo');
+    else if (host.includes('lilianarceo'))
+        res.render('team/lilianarceo');
+    else if (host.includes('marcocelaya'))
+        res.render('team/marcocelaya');
+    else if (host.includes('pamelaperez'))
+        res.render('team/pamelaperez');
     else
         res.render('home');
 });
