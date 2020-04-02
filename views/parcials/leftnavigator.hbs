@@ -1,9 +1,9 @@
 <div id="main-navigation">
-    <nav class="navbar navbar-dark">
+    <nav class="navbar navbar-{{s theme 'dark'}}">
         <ul class="navbar-nav">
 
             <li class="nav-item">
-                <a class="nav-link active" href="#collapse__home" data-toggle="collapse" role="button">Liberato</a>
+                <a class="nav-link {{active activeIndex 0}}" href="#collapse__home" data-toggle="collapse" role="button">Liberato</a>
                 <div class="collapse" id="collapse__home">
                     <ul class="nav flex-column">
                         <li class="nav-item">
@@ -16,8 +16,8 @@
                 </div>
             </li>
 
-            <li class="nav-item active">
-                <a class="nav-link" href="#collapse__about" data-toggle="collapse" role="button">Información</a>
+            <li class="nav-item">
+                <a class="nav-link {{active activeIndex 1}}" href="#collapse__about" data-toggle="collapse" role="button">Información</a>
                 <div class="collapse" id="collapse__about">
                     <ul class="nav flex-column">
                         <li class="nav-item">
@@ -30,8 +30,8 @@
                 </div>
             </li>
 
-            <li class="nav-item active">
-                <a class="nav-link" href="blog">Blog</a>
+            <li class="nav-item">
+                <a class="nav-link {{active activeIndex 2}}" href="blog">Blog</a>
             </li>
 
         </ul>

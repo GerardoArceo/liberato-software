@@ -1,7 +1,7 @@
 <?php
 mb_internal_encoding("UTF-8");
 
-$to = 'hello@example.com';
+$to = 'mr.gerardo.arceo@gmail.com';
 $subject = 'Message from contact form';
 
 $name = "";
