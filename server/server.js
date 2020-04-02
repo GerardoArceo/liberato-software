@@ -19,10 +19,10 @@ app.get('/contact', (req, res) => res.render('contact'));
 app.get('/team', (req, res) => res.render('team'));
 app.get('/blog', (req, res) => res.render('blog'));
 
-app.get('/piase', (req, res) => res.render('projects/piase'));
-app.get('/lienzourbano', (req, res) => res.render('projects/lienzourbano'));
-app.get('/lietoapp', (req, res) => res.render('projects/lietoapp'));
-app.get('/ilaw', (req, res) => res.render('projects/ilaw'));
+app.get('/projects/piase', (req, res) => res.render('projects/piase'));
+app.get('/projects/lienzourbano', (req, res) => res.render('projects/lienzourbano'));
+app.get('/projects/lietoapp', (req, res) => res.render('projects/lietoapp'));
+app.get('/projects/ilaw', (req, res) => res.render('projects/ilaw'));
 
 app.get('*', (req, res) => {
     const host = req.headers.host;
