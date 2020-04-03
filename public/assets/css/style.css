@@ -1,87 +1,3 @@
-/*----------------------------------------------------------------------------------------------------------------------
-Project:	    Preus
-Version:        1.0.0
-
-Default Color   #000;
-Background Color  #fff;
-
-Body copy:		'Poppins', sans-serif; 16px;
-Headers:		'Poppins', sans-serif;
-
-----------------------------------------------------------------------------------------------------------------------*/
-
-/*----------------------------------------------------------------------------------------------------------------------
-[Table of contents]
-
-A. Basic Styling
-  -- Styling
-
-B. Helpers
-  -- animations
-  -- align
-  -- borders
-  -- colors
-  -- column-count
-  -- background
-  -- height
-  -- margin
-  -- list
-  -- no-gutters
-  -- opacity
-  -- overflow
-  -- padding
-  -- position
-  -- shadow
-  -- typography
-  -- title
-  -- transitions
-  -- utilities
-  -- video-bg
-  -- width
-  -- z-index
-
-C. Components
-  -- block
-  -- blockquote
-  -- blog
-  -- box
-  -- buttons
-  -- card
-  -- circle
-  -- description-list
-  -- forms
-  -- footer
-  -- gallery
-  -- hr
-  -- inputs
-  -- item
-  -- list
-  -- loading-screen
-  -- map
-  -- member
-  -- hero
-  -- navbar
-  -- page
-  -- partners
-
-D. Plugins Styles
-  -- Magnific Popup
-  -- Owl Carousel
-
-E. Template Specific Elements
-  -- Other
-
-
-----------------------------------------------------------------------------------------------------------------------*/
-
-/***********************************************************************************************************************
-A. Basic Styling
-***********************************************************************************************************************/
-
-/*-------------------------------------------
-  -- Styling - Colors, Font Size, Font Family
--------------------------------------------*/
-
 body {
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
@@ -117,93 +33,110 @@ html {
     }
 }
 
-h1, .ts-h1 {
+h1,
+.ts-h1 {
     font-size: 2.5rem;
     font-weight: 600;
     margin-bottom: .5rem;
 }
 
 @media (min-width: 48rem) {
-    h1, .ts-h1 {
+    h1,
+    .ts-h1 {
         font-size: 3rem;
     }
 }
 
 @media (min-width: 75rem) {
-    h1, .ts-h1 {
+    h1,
+    .ts-h1 {
         font-size: 4.5rem;
     }
 }
 
 @media (min-width: 62rem) {
-    h1, .ts-h1 {
+    h1,
+    .ts-h1 {
         margin-bottom: 1rem;
     }
 }
 
-h2, .ts-h2 {
+h2,
+.ts-h2 {
     font-size: 1.625rem;
     font-weight: 300;
 }
 
 @media (min-width: 48rem) {
-    h2, .ts-h2 {
+    h2,
+    .ts-h2 {
         font-size: 1.875rem;
     }
 }
 
 @media (min-width: 75rem) {
-    h2, .ts-h2 {
+    h2,
+    .ts-h2 {
         font-size: 2.25rem;
     }
 }
 
-h3, .ts-h3 {
+h3,
+.ts-h3 {
     font-size: 1.5rem;
     margin-bottom: 1.5625rem;
 }
 
 @media (min-width: 36rem) {
-    h3, .ts-h3 {
+    h3,
+    .ts-h3 {
         font-size: 1.375rem;
     }
 }
 
 @media (min-width: 75rem) {
-    h3, .ts-h3 {
+    h3,
+    .ts-h3 {
         font-size: 1.875rem;
     }
 }
 
-h4, .ts-h4 {
+h4,
+.ts-h4 {
     font-size: 1.25rem;
     margin-bottom: 1.875rem;
     font-weight: 300;
 }
 
 @media (min-width: 48rem) {
-    h4, .ts-h4 {
+    h4,
+    .ts-h4 {
         font-size: 1.5rem;
     }
 }
 
-h5, .ts-h5 {
+h5,
+.ts-h5 {
     font-size: 1.125rem;
 }
 
 @media (min-width: 36rem) {
-    h5, .ts-h5 {
+    h5,
+    .ts-h5 {
         font-size: 1.25rem;
     }
 }
 
-h6, .ts-h6 {
+h6,
+.ts-h6 {
     font-size: 1rem;
 }
+
 
 /***********************************************************************************************************************
 B. Helpers
 ***********************************************************************************************************************/
+
 
 /*-------------------------------------------
   -- Animations
@@ -212,12 +145,13 @@ B. Helpers
 [data-animate] {
     opacity: 0;
     -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
     -webkit-animation-duration: .8s;
-            animation-duration: .8s;
+    animation-duration: .8s;
     -webkit-animation-timing-function: cubic-bezier(.67, .01, .08, .99);
-            animation-timing-function: cubic-bezier(.67, .01, .08, .99);
+    animation-timing-function: cubic-bezier(.67, .01, .08, .99);
 }
+
 
 /* Fade In Up */
 
@@ -225,13 +159,12 @@ B. Helpers
     from {
         opacity: 0;
         -webkit-transform: translate3d(0, 1.25rem, 0);
-                transform: translate3d(0, 1.25rem, 0);
+        transform: translate3d(0, 1.25rem, 0);
     }
-
     to {
         opacity: 1;
         -webkit-transform: translate3d(0, 0, 0);
-                transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
     }
 }
 
@@ -239,20 +172,20 @@ B. Helpers
     from {
         opacity: 0;
         -webkit-transform: translate3d(0, 1.25rem, 0);
-                transform: translate3d(0, 1.25rem, 0);
+        transform: translate3d(0, 1.25rem, 0);
     }
-
     to {
         opacity: 1;
         -webkit-transform: translate3d(0, 0, 0);
-                transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
     }
 }
 
 .ts-fadeInUp {
     -webkit-animation-name: ts-fadeInUp;
-            animation-name: ts-fadeInUp;
+    animation-name: ts-fadeInUp;
 }
+
 
 /* Fade In Down */
 
@@ -260,13 +193,12 @@ B. Helpers
     from {
         opacity: 0;
         -webkit-transform: translate3d(0, -1.25rem, 0);
-                transform: translate3d(0, -1.25rem, 0);
+        transform: translate3d(0, -1.25rem, 0);
     }
-
     to {
         opacity: 1;
         -webkit-transform: translate3d(0, 0, 0);
-                transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
     }
 }
 
@@ -274,20 +206,20 @@ B. Helpers
     from {
         opacity: 0;
         -webkit-transform: translate3d(0, -1.25rem, 0);
-                transform: translate3d(0, -1.25rem, 0);
+        transform: translate3d(0, -1.25rem, 0);
     }
-
     to {
         opacity: 1;
         -webkit-transform: translate3d(0, 0, 0);
-                transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
     }
 }
 
 .ts-fadeInDown {
     -webkit-animation-name: ts-fadeInDown;
-            animation-name: ts-fadeInDown;
+    animation-name: ts-fadeInDown;
 }
+
 
 /* Fade In Left */
 
@@ -295,13 +227,12 @@ B. Helpers
     from {
         opacity: 0;
         -webkit-transform: translate3d(-1.25rem, 0, 0);
-                transform: translate3d(-1.25rem, 0, 0);
+        transform: translate3d(-1.25rem, 0, 0);
     }
-
     to {
         opacity: 1;
         -webkit-transform: translate3d(0, 0, 0);
-                transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
     }
 }
 
@@ -309,20 +240,20 @@ B. Helpers
     from {
         opacity: 0;
         -webkit-transform: translate3d(-1.25rem, 0, 0);
-                transform: translate3d(-1.25rem, 0, 0);
+        transform: translate3d(-1.25rem, 0, 0);
     }
-
     to {
         opacity: 1;
         -webkit-transform: translate3d(0, 0, 0);
-                transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
     }
 }
 
 .ts-fadeInLeft {
     -webkit-animation-name: ts-fadeInLeft;
-            animation-name: ts-fadeInLeft;
+    animation-name: ts-fadeInLeft;
 }
+
 
 /* Fade In Right */
 
@@ -330,13 +261,12 @@ B. Helpers
     from {
         opacity: 0;
         -webkit-transform: translate3d(1.25rem, 0, 0);
-                transform: translate3d(1.25rem, 0, 0);
+        transform: translate3d(1.25rem, 0, 0);
     }
-
     to {
         opacity: 1;
         -webkit-transform: translate3d(0, 0, 0);
-                transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
     }
 }
 
@@ -344,20 +274,20 @@ B. Helpers
     from {
         opacity: 0;
         -webkit-transform: translate3d(1.25rem, 0, 0);
-                transform: translate3d(1.25rem, 0, 0);
+        transform: translate3d(1.25rem, 0, 0);
     }
-
     to {
         opacity: 1;
         -webkit-transform: translate3d(0, 0, 0);
-                transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
     }
 }
 
 .ts-fadeInRight {
     -webkit-animation-name: ts-fadeInRight;
-            animation-name: ts-fadeInRight;
+    animation-name: ts-fadeInRight;
 }
+
 
 /* Zoom In */
 
@@ -365,13 +295,12 @@ B. Helpers
     from {
         opacity: 0;
         -webkit-transform: scale(.5);
-                transform: scale(.5);
+        transform: scale(.5);
     }
-
     to {
         opacity: 1;
         -webkit-transform: scale(1);
-                transform: scale(1);
+        transform: scale(1);
     }
 }
 
@@ -379,20 +308,20 @@ B. Helpers
     from {
         opacity: 0;
         -webkit-transform: scale(.5);
-                transform: scale(.5);
+        transform: scale(.5);
     }
-
     to {
         opacity: 1;
         -webkit-transform: scale(1);
-                transform: scale(1);
+        transform: scale(1);
     }
 }
 
 .ts-zoomIn {
     -webkit-animation-name: ts-zoomIn;
-            animation-name: ts-zoomIn;
+    animation-name: ts-zoomIn;
 }
+
 
 /* Zoom Out In */
 
@@ -400,13 +329,12 @@ B. Helpers
     from {
         opacity: 0;
         -webkit-transform: scale(1.1);
-                transform: scale(1.1);
+        transform: scale(1.1);
     }
-
     to {
         opacity: 1;
         -webkit-transform: scale(1);
-                transform: scale(1);
+        transform: scale(1);
     }
 }
 
@@ -414,20 +342,20 @@ B. Helpers
     from {
         opacity: 0;
         -webkit-transform: scale(1.1);
-                transform: scale(1.1);
+        transform: scale(1.1);
     }
-
     to {
         opacity: 1;
         -webkit-transform: scale(1);
-                transform: scale(1);
+        transform: scale(1);
     }
 }
 
 .ts-zoomOutIn {
     -webkit-animation-name: ts-zoomOutIn;
-            animation-name: ts-zoomOutIn;
+    animation-name: ts-zoomOutIn;
 }
+
 
 /* Zoom In Short */
 
@@ -435,13 +363,12 @@ B. Helpers
     from {
         opacity: 0;
         -webkit-transform: scale(.9);
-                transform: scale(.9);
+        transform: scale(.9);
     }
-
     to {
         opacity: 1;
         -webkit-transform: scale(1);
-                transform: scale(1);
+        transform: scale(1);
     }
 }
 
@@ -449,20 +376,20 @@ B. Helpers
     from {
         opacity: 0;
         -webkit-transform: scale(.9);
-                transform: scale(.9);
+        transform: scale(.9);
     }
-
     to {
         opacity: 1;
         -webkit-transform: scale(1);
-                transform: scale(1);
+        transform: scale(1);
     }
 }
 
 .ts-zoomInShort {
     -webkit-animation-name: ts-zoomInShort;
-            animation-name: ts-zoomInShort;
+    animation-name: ts-zoomInShort;
 }
+
 
 /* Reveal */
 
@@ -470,13 +397,12 @@ B. Helpers
     from {
         opacity: 0;
         -webkit-transform: scale(.9);
-                transform: scale(.9);
+        transform: scale(.9);
     }
-
     to {
         opacity: 1;
         -webkit-transform: scale(1);
-                transform: scale(1);
+        transform: scale(1);
     }
 }
 
@@ -484,13 +410,12 @@ B. Helpers
     from {
         opacity: 0;
         -webkit-transform: scale(.9);
-                transform: scale(.9);
+        transform: scale(.9);
     }
-
     to {
         opacity: 1;
         -webkit-transform: scale(1);
-                transform: scale(1);
+        transform: scale(1);
     }
 }
 
@@ -500,7 +425,7 @@ B. Helpers
 
 [data-animate="ts-reveal"].animated .wrapper span {
     -webkit-transform: translateY(0%);
-            transform: translateY(0%);
+    transform: translateY(0%);
 }
 
 [data-animate="ts-reveal"] .wrapper {
@@ -513,11 +438,11 @@ B. Helpers
     display: inline-block;
     transition: -webkit-transform .8s cubic-bezier(.67, .01, .08, .99);
     transition: transform .8s cubic-bezier(.67, .01, .08, .99);
-    transition: transform .8s cubic-bezier(.67, .01, .08, .99),
-                -webkit-transform .8s cubic-bezier(.67, .01, .08, .99);
+    transition: transform .8s cubic-bezier(.67, .01, .08, .99), -webkit-transform .8s cubic-bezier(.67, .01, .08, .99);
     -webkit-transform: translateY(100%);
-            transform: translateY(100%);
+    transform: translateY(100%);
 }
+
 
 /* -- Align */
 
@@ -526,12 +451,14 @@ B. Helpers
     align-items: center;
 }
 
+
 /*-------------------------------------------
   -- Borders
 -------------------------------------------*/
 
 :root {
-    /* Border radius *//* Border bottom */
+    /* Border radius */
+    /* Border bottom */
 }
 
 .ts-border-radius__sm {
@@ -602,18 +529,19 @@ B. Helpers
 
 .ts-column-count-2 {
     -webkit-column-count: 2;
-            column-count: 2;
+    column-count: 2;
 }
 
 .ts-column-count-3 {
     -webkit-column-count: 3;
-            column-count: 3;
+    column-count: 3;
 }
 
 .ts-column-count-4 {
     -webkit-column-count: 4;
-            column-count: 4;
+    column-count: 4;
 }
+
 
 /*-------------------------------------------
   -- Background
@@ -649,7 +577,8 @@ B. Helpers
     background-size: inherit;
 }
 
-.ts-background-image, .ts-img-into-bg {
+.ts-background-image,
+.ts-img-into-bg {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
@@ -661,7 +590,8 @@ B. Helpers
     left: 0;
 }
 
-.ts-background-image img, .ts-img-into-bg img {
+.ts-background-image img,
+.ts-img-into-bg img {
     display: none;
 }
 
@@ -750,6 +680,7 @@ B. Helpers
     background-color: #000;
 }
 
+
 /*-------------------------------------------
   -- Height
 -------------------------------------------*/
@@ -769,6 +700,7 @@ B. Helpers
 .ts-height--100vh {
     height: 100vh;
 }
+
 
 /*-------------------------------------------
   -- Margin
@@ -835,6 +767,7 @@ B. Helpers
     opacity: .4;
 }
 
+
 /*-------------------------------------------
   -- No Gutters - Removes padding from col*
 -------------------------------------------*/
@@ -844,10 +777,12 @@ B. Helpers
     margin-left: 0;
 }
 
-.no-gutters > .col, .no-gutters > [class*="col-"] {
+.no-gutters>.col,
+.no-gutters>[class*="col-"] {
     padding-right: 0;
     padding-left: 0;
 }
+
 
 /*-------------------------------------------
   -- Opacity
@@ -893,6 +828,7 @@ B. Helpers
     opacity: .9;
 }
 
+
 /*-------------------------------------------
   -- Overflow
 -------------------------------------------*/
@@ -912,6 +848,7 @@ B. Helpers
 .ts-overflow-y--hidden {
     overflow-y: hidden;
 }
+
 
 /*-------------------------------------------
   -- Padding
@@ -933,9 +870,11 @@ B. Helpers
     padding-left: 0 !important;
 }
 
+
 /*-------------------------------------------
   -- Position
 -------------------------------------------*/
+
 
 /* Top */
 
@@ -950,6 +889,7 @@ B. Helpers
 .ts-top__100 {
     top: 100%;
 }
+
 
 /* Right */
 
@@ -969,6 +909,7 @@ B. Helpers
     right: inherit;
 }
 
+
 /* Bottom */
 
 .ts-bottom__0 {
@@ -982,6 +923,7 @@ B. Helpers
 .ts-bottom__100 {
     bottom: 100%;
 }
+
 
 /* Left */
 
@@ -1003,18 +945,19 @@ B. Helpers
 
 .ts-push-left__100 {
     -webkit-transform: translateX(100%);
-            transform: translateX(100%);
+    transform: translateX(100%);
 }
 
 .ts-push-down__50 {
     -webkit-transform: translateY(50%);
-            transform: translateY(50%);
+    transform: translateY(50%);
 }
 
 .ts-push-up__50 {
     -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+    transform: translateY(-50%);
 }
+
 
 /*-------------------------------------------
   -- Shadow
@@ -1039,6 +982,7 @@ B. Helpers
 .ts-shadow__none {
     box-shadow: none !important;
 }
+
 
 /*-------------------------------------------
   -- Typography
@@ -1082,8 +1026,7 @@ p {
     font-size: .8125rem !important;
 }
 
-.ts-xs-text-center {
-}
+.ts-xs-text-center {}
 
 @media (max-width: 35.9375rem) {
     .ts-xs-text-center {
@@ -1123,12 +1066,12 @@ p {
     text-decoration: underline;
 }
 
+
 /*-------------------------------------------
   -- Title
 -------------------------------------------*/
 
-.ts-title {
-}
+.ts-title {}
 
 @media (max-width: 35.9375rem) {
     .ts-title {
@@ -1154,8 +1097,10 @@ p {
 }
 
 :root {
-    /* Transition *//*--tr-cubic: .5s cubic-bezier(.03,.18,.05,1.01);*/
+    /* Transition */
+    /*--tr-cubic: .5s cubic-bezier(.03,.18,.05,1.01);*/
 }
+
 
 /*-------------------------------------------
   -- Utilities
@@ -1164,6 +1109,7 @@ p {
 .ts-element {
     position: relative;
 }
+
 
 /* Social Icons */
 
@@ -1175,6 +1121,7 @@ p {
     padding: .125rem .25rem;
     color: #1f1f1f;
 }
+
 
 /* Overlay */
 
@@ -1194,18 +1141,20 @@ p {
     z-index: -1;
 }
 
+
 /* Flip x */
 
 .ts-flip-x {
     -webkit-transform: scaleY(-1);
-            transform: scaleY(-1);
+    transform: scaleY(-1);
 }
+
 
 /* Flip Y */
 
 .ts-flip-y {
     -webkit-transform: scaleX(-1);
-            transform: scaleX(-1);
+    transform: scaleX(-1);
 }
 
 .ts-has-talk-arrow {
@@ -1264,6 +1213,7 @@ p {
     width: 100%;
 }
 
+
 /*-------------------------------------------
   -- Width
 -------------------------------------------*/
@@ -1316,6 +1266,7 @@ p {
     width: auto !important;
 }
 
+
 /*-------------------------------------------
   -- Z-index
 -------------------------------------------*/
@@ -1340,9 +1291,11 @@ p {
     z-index: 1000 !important;
 }
 
+
 /***********************************************************************************************************************
 C. Components
 ***********************************************************************************************************************/
+
 
 /*-------------------------------------------
   -- Block
@@ -1389,6 +1342,7 @@ section {
     position: relative;
 }
 
+
 /*-------------------------------------------
   -- Blockquote
 -------------------------------------------*/
@@ -1425,7 +1379,7 @@ blockquote h2 {
 .ts-blog-thumb .ts-blog-image:hover:after {
     opacity: 1;
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
 }
 
 .ts-blog-thumb .ts-blog-image:after {
@@ -1445,7 +1399,7 @@ blockquote h2 {
     opacity: 0;
     transition: .3s ease;
     -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .ts-blog-thumb .ts-blog-image .ts-background-image {
@@ -1519,7 +1473,8 @@ blockquote h2 {
     padding: .25rem .5rem;
 }
 
-.page-item:first-child .page-link, .page-item:last-child .page-link {
+.page-item:first-child .page-link,
+.page-item:last-child .page-link {
     border-radius: 0;
 }
 
@@ -1572,6 +1527,7 @@ blockquote h2 {
     padding-left: 7rem;
 }
 
+
 /*-------------------------------------------
   -- Box
 -------------------------------------------*/
@@ -1583,6 +1539,7 @@ blockquote h2 {
     box-shadow: .125rem .1875rem .9375rem rgba(0, 0, 0, .15);
     padding: 1.5625rem;
 }
+
 
 /*-------------------------------------------
   -- Buttons
@@ -1606,7 +1563,7 @@ blockquote h2 {
 
 .btn:hover .fa-arrow-right {
     -webkit-transform: translateX(.5rem);
-            transform: translateX(.5rem);
+    transform: translateX(.5rem);
 }
 
 .btn.btn-sm {
@@ -1657,7 +1614,7 @@ blockquote h2 {
     transition: .3s ease;
     z-index: 1;
     -webkit-transform: scale(0);
-            transform: scale(0);
+    transform: scale(0);
 }
 
 .btn .status .status-icon.valid {
@@ -1682,7 +1639,7 @@ blockquote h2 {
 
 .btn.done .status-icon {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
     opacity: 1;
 }
 
@@ -1695,17 +1652,17 @@ blockquote h2 {
 
 .ts-btn-effect:hover .ts-hidden {
     -webkit-transform: translateX(0%);
-            transform: translateX(0%);
+    transform: translateX(0%);
 }
 
 .ts-btn-effect:hover .ts-visible {
     -webkit-transform: translateX(100%);
-            transform: translateX(100%);
+    transform: translateX(100%);
 }
 
 .ts-btn-effect .ts-visible {
     -webkit-transform: translateX(0%);
-            transform: translateX(0%);
+    transform: translateX(0%);
     transition: .3s ease;
 }
 
@@ -1714,7 +1671,7 @@ blockquote h2 {
     top: 0;
     left: 0;
     -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
+    transform: translateX(-100%);
     transition: .3s ease;
 }
 
@@ -1774,6 +1731,7 @@ blockquote h2 {
     padding-right: 2rem;
 }
 
+
 /*
   &:hover {
     color: var(--color-white);
@@ -1791,13 +1749,13 @@ blockquote h2 {
 
 .ts-link-arrow-effect:before {
     -webkit-animation: ts-link-arrow-effect-animation-out;
-            animation: ts-link-arrow-effect-animation-out;
+    animation: ts-link-arrow-effect-animation-out;
     -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
     -webkit-animation-duration: .4s;
-            animation-duration: .4s;
+    animation-duration: .4s;
     -webkit-animation-timing-function: cubic-bezier(.6, .01, 0, 1);
-            animation-timing-function: cubic-bezier(.6, .01, 0, 1);
+    animation-timing-function: cubic-bezier(.6, .01, 0, 1);
     background-color: #000;
     bottom: 0;
     height: .125rem;
@@ -1808,16 +1766,16 @@ blockquote h2 {
     top: 0;
     width: 100%;
     -webkit-transform: scaleX(.2);
-            transform: scaleX(.2);
+    transform: scaleX(.2);
     -webkit-transform-origin: left center;
-             transform-origin: left center;
+    transform-origin: left center;
     z-index: -1;
 }
 
 .ts-link-arrow-effect span {
     position: relative;
     -webkit-transform: translateX(-200%);
-            transform: translateX(-200%);
+    transform: translateX(-200%);
     display: inline-block;
     transition: .6s cubic-bezier(.6, .01, 0, 1);
 }
@@ -1825,114 +1783,103 @@ blockquote h2 {
 @-webkit-keyframes ts-link-arrow-effect-animation-in {
     0% {
         -webkit-transform-origin: left center;
-                 transform-origin: left center;
+        transform-origin: left center;
         -webkit-transform: scaleX(.2);
-                transform: scaleX(.2);
+        transform: scaleX(.2);
     }
-
     70% {
         -webkit-transform-origin: left center;
-                 transform-origin: left center;
+        transform-origin: left center;
         -webkit-transform: scaleX(1);
-                transform: scaleX(1);
+        transform: scaleX(1);
     }
-
     71% {
         -webkit-transform-origin: right center;
-                transform-origin: right center;
+        transform-origin: right center;
     }
-
     100% {
         -webkit-transform-origin: right center;
-                 transform-origin: right center;
+        transform-origin: right center;
         -webkit-transform: scaleX(.2);
-                transform: scaleX(.2);
+        transform: scaleX(.2);
     }
 }
 
 @keyframes ts-link-arrow-effect-animation-in {
     0% {
         -webkit-transform-origin: left center;
-                 transform-origin: left center;
+        transform-origin: left center;
         -webkit-transform: scaleX(.2);
-                transform: scaleX(.2);
+        transform: scaleX(.2);
     }
-
     70% {
         -webkit-transform-origin: left center;
-                 transform-origin: left center;
+        transform-origin: left center;
         -webkit-transform: scaleX(1);
-                transform: scaleX(1);
+        transform: scaleX(1);
     }
-
     71% {
         -webkit-transform-origin: right center;
-                transform-origin: right center;
+        transform-origin: right center;
     }
-
     100% {
         -webkit-transform-origin: right center;
-                 transform-origin: right center;
+        transform-origin: right center;
         -webkit-transform: scaleX(.2);
-                transform: scaleX(.2);
+        transform: scaleX(.2);
     }
 }
 
 @-webkit-keyframes ts-link-arrow-effect-animation-out {
     0% {
         -webkit-transform-origin: right center;
-                 transform-origin: right center;
+        transform-origin: right center;
         -webkit-transform: scaleX(.2);
-                transform: scaleX(.2);
+        transform: scaleX(.2);
     }
-
     70% {
         -webkit-transform-origin: right center;
-                transform-origin: right center;
+        transform-origin: right center;
     }
-
     71% {
         -webkit-transform-origin: left center;
-                 transform-origin: left center;
+        transform-origin: left center;
         -webkit-transform: scaleX(1);
-                transform: scaleX(1);
+        transform: scaleX(1);
     }
-
     100% {
         -webkit-transform-origin: left center;
-                 transform-origin: left center;
+        transform-origin: left center;
         -webkit-transform: scaleX(.2);
-                transform: scaleX(.2);
+        transform: scaleX(.2);
     }
 }
 
 @keyframes ts-link-arrow-effect-animation-out {
     0% {
         -webkit-transform-origin: right center;
-                 transform-origin: right center;
+        transform-origin: right center;
         -webkit-transform: scaleX(.2);
-                transform: scaleX(.2);
+        transform: scaleX(.2);
     }
-
     70% {
         -webkit-transform-origin: right center;
-                transform-origin: right center;
+        transform-origin: right center;
     }
-
     71% {
         -webkit-transform-origin: left center;
-                 transform-origin: left center;
+        transform-origin: left center;
         -webkit-transform: scaleX(1);
-                transform: scaleX(1);
+        transform: scaleX(1);
     }
-
     100% {
         -webkit-transform-origin: left center;
-                 transform-origin: left center;
+        transform-origin: left center;
         -webkit-transform: scaleX(.2);
-                transform: scaleX(.2);
+        transform: scaleX(.2);
     }
 }
+
 
 /*-------------------------------------------
   -- Card
@@ -1940,7 +1887,7 @@ blockquote h2 {
 
 .card {
     -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
+    backface-visibility: hidden;
     border: none;
     box-shadow: .125rem .1875rem .9375rem rgba(0, 0, 0, .15);
     overflow: hidden;
@@ -1962,13 +1909,14 @@ blockquote h2 {
     padding: 1.5625rem;
 }
 
-.ts-cards-same-height > div[class*='col-'] {
+.ts-cards-same-height>div[class*='col-'] {
     display: flex;
 }
 
-.ts-cards-same-height > div[class*='col-'] .card {
+.ts-cards-same-height>div[class*='col-'] .card {
     width: 100%;
 }
+
 
 /*-------------------------------------------
   -- Circle
@@ -2055,6 +2003,7 @@ blockquote h2 {
     width: 15.625rem;
 }
 
+
 /* --Description */
 
 dl dt {
@@ -2065,11 +2014,13 @@ dl dd {
     margin-bottom: 1rem;
 }
 
+
 /*-------------------------------------------
   -- Forms
 -------------------------------------------*/
 
-form label, .ts-form label {
+form label,
+.ts-form label {
     font-weight: 600;
     font-size: .75rem;
     text-transform: uppercase;
@@ -2154,11 +2105,10 @@ form label, .ts-form label {
 
 .ts-gallery__item:hover .ts-background {
     -webkit-transform: scale(1.1) rotate(.01deg);
-            transform: scale(1.1) rotate(.01deg);
+    transform: scale(1.1) rotate(.01deg);
 }
 
-.ts-gallery__item.ts-half {
-}
+.ts-gallery__item.ts-half {}
 
 @media (min-width: 36rem) {
     .ts-gallery__item.ts-half {
@@ -2180,9 +2130,9 @@ form label, .ts-form label {
 
 .ts-gallery__item .ts-background {
     -webkit-transform: scale(1) rotate(.01deg);
-            transform: scale(1) rotate(.01deg);
+    transform: scale(1) rotate(.01deg);
     -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
+    backface-visibility: hidden;
     transition: .8s ease;
     z-index: 0;
 }
@@ -2240,6 +2190,7 @@ form label, .ts-form label {
     width: 100%;
 }
 
+
 /*-------------------------------------------
   -- HR
 -------------------------------------------*/
@@ -2247,6 +2198,7 @@ form label, .ts-form label {
 .ts-hr-light {
     border-color: rgba(255, 255, 255, .2);
 }
+
 
 /*-------------------------------------------
   -- Inputs
@@ -2287,6 +2239,7 @@ form label, .ts-form label {
     color: #fff;
 }
 
+
 /*-------------------------------------------
   -- List
 -------------------------------------------*/
@@ -2298,6 +2251,7 @@ ul.ts-list-colored-bullets li:before {
     font-size: 1.75rem;
     padding-right: .75rem;
 }
+
 
 /*-------------------------------------------
   -- Loading Screen
@@ -2327,7 +2281,7 @@ body.has-loading-screen:after {
     right: 0;
     opacity: 1;
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
     transition: 1.5s ease;
     top: 0;
     z-index: 10000;
@@ -2348,7 +2302,7 @@ body.has-loading-screen.loading-done:before {
 
 body.has-loading-screen.loading-done:after {
     -webkit-transform: scale(0);
-            transform: scale(0);
+    transform: scale(0);
     opacity: 0;
 }
 
@@ -2360,6 +2314,7 @@ body.has-loading-screen.loading-done #main-navigation,
 body.has-loading-screen.loading-done #brand-navigation {
     display: block;
 }
+
 
 /*-------------------------------------------
   -- Map
@@ -2377,7 +2332,9 @@ body.has-loading-screen.loading-done #brand-navigation {
     display: none !important;
 }
 
-.map .gmnoprint a, .map .gmnoprint span, .map .gm-style-cc {
+.map .gmnoprint a,
+.map .gmnoprint span,
+.map .gm-style-cc {
     display: none;
 }
 
@@ -2404,6 +2361,7 @@ body.has-loading-screen.loading-done #brand-navigation {
     font-size: .625rem;
 }
 
+
 /*-------------------------------------------
   -- Hero
 -------------------------------------------*/
@@ -2419,6 +2377,7 @@ body.has-loading-screen.loading-done #brand-navigation {
     background-position: top center;
 }
 
+
 /*-------------------------------------------
   -- Navbar
 -------------------------------------------*/
@@ -2432,7 +2391,7 @@ body.has-loading-screen.loading-done #brand-navigation {
     display: flex;
     align-items: center;
     -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
+    transform: translateX(-100%);
     width: 100%;
 }
 
@@ -2458,7 +2417,7 @@ body.has-loading-screen.loading-done #brand-navigation {
     border-right: .0625rem solid rgba(0, 0, 0, .2);
 }
 
-#main-navigation .navbar.navbar-light .navbar-nav > .nav-item > .nav-link::after {
+#main-navigation .navbar.navbar-light .navbar-nav>.nav-item>.nav-link::after {
     background-color: #000;
 }
 
@@ -2471,7 +2430,7 @@ body.has-loading-screen.loading-done #brand-navigation {
     width: 100%;
 }
 
-#main-navigation .navbar-nav > .nav-item > .nav-link:after {
+#main-navigation .navbar-nav>.nav-item>.nav-link:after {
     background-color: #fff;
     content: "";
     height: .125rem;
@@ -2483,16 +2442,16 @@ body.has-loading-screen.loading-done #brand-navigation {
     transition: .5s cubic-bezier(.77, 0, .18, 1);
 }
 
-#main-navigation .navbar-nav > .nav-item > .nav-link.active:after {
+#main-navigation .navbar-nav>.nav-item>.nav-link.active:after {
     width: 100%;
     opacity: 1;
 }
 
-#main-navigation .navbar-nav > .nav-item > .nav-link[aria-expanded="true"]:not(.active) {
+#main-navigation .navbar-nav>.nav-item>.nav-link[aria-expanded="true"]:not(.active) {
     opacity: .6;
 }
 
-#main-navigation .navbar-nav > .nav-item .nav {
+#main-navigation .navbar-nav>.nav-item .nav {
     font-size: 75%;
     padding: .5rem 0;
 }
@@ -2550,7 +2509,7 @@ body.has-loading-screen.loading-done #brand-navigation {
     display: inline-block;
     opacity: 0;
     -webkit-transform: translateX(.375rem);
-            transform: translateX(.375rem);
+    transform: translateX(.375rem);
     visibility: hidden;
     width: 100%;
 }
@@ -2569,8 +2528,7 @@ body.has-loading-screen.loading-done #brand-navigation {
     top: 0;
     transition: -webkit-transform .5s cubic-bezier(.77, 0, .18, 1);
     transition: transform .5s cubic-bezier(.77, 0, .18, 1);
-    transition: transform .5s cubic-bezier(.77, 0, .18, 1),
-                -webkit-transform .5s cubic-bezier(.77, 0, .18, 1);
+    transition: transform .5s cubic-bezier(.77, 0, .18, 1), -webkit-transform .5s cubic-bezier(.77, 0, .18, 1);
     z-index: 1000;
     background-color: #000;
     left: 0;
@@ -2610,12 +2568,12 @@ body.has-loading-screen.loading-done #brand-navigation {
 
 body.nav-hovered .ts-content {
     -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
 }
 
 body.nav-hovered #main-navigation {
     -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
 }
 
 body.nav-hovered #main-navigation .navbar {
@@ -2625,7 +2583,7 @@ body.nav-hovered #main-navigation .navbar {
 body.nav-hovered #main-navigation .navbar .ts-hidden {
     opacity: 1;
     -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
     visibility: visible;
 }
 
@@ -2638,6 +2596,7 @@ body.nav-hovered #main-navigation .navbar-toggler {
     right: 0;
 }
 
+
 /*-------------------------------------------
   -- Page
 -------------------------------------------*/
@@ -2646,14 +2605,14 @@ body.nav-hovered #main-navigation .navbar-toggler {
     overflow: hidden;
 }
 
-.ts-content {
-}
+.ts-content {}
 
 @media (max-width: 35.9375rem) {
     .ts-content {
         margin-top: 4.5rem;
     }
 }
+
 
 /*-------------------------------------------
   -- Partners
@@ -2663,6 +2622,7 @@ body.nav-hovered #main-navigation .navbar-toggler {
     display: block;
     padding: .625rem .3125rem;
 }
+
 
 /*-------------------------------------------
   -- Progress
@@ -2684,7 +2644,7 @@ body.nav-hovered #main-navigation .navbar-toggler {
     position: absolute;
     left: 0%;
     -webkit-transform: translateX(-1rem);
-            transform: translateX(-1rem);
+    transform: translateX(-1rem);
 }
 
 .progress .ts-progress-value:after {
@@ -2705,9 +2665,11 @@ body.nav-hovered #main-navigation .navbar-toggler {
     width: 0%;
 }
 
-.progress .progress-bar, .progress .ts-progress-value {
+.progress .progress-bar,
+.progress .ts-progress-value {
     transition: 1s ease;
 }
+
 
 /*-------------------------------------------
   -- Promo Numbers
@@ -2766,6 +2728,7 @@ body.nav-hovered #main-navigation .navbar-toggler {
     border-bottom: .25rem solid #fff;
 }
 
+
 /*-------------------------------------------
   -- Slider
 -------------------------------------------*/
@@ -2793,20 +2756,23 @@ body.nav-hovered #main-navigation .navbar-toggler {
 
 .ts-slider.owl-carousel .owl-dots {
     -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
+    transform: translateY(-100%);
 }
 
 .ts-slider.owl-carousel .owl-dots .owl-dot.active span {
     background-color: #fff;
 }
 
+
 /***********************************************************************************************************************
 D. Plugins Styles
 ***********************************************************************************************************************/
 
+
 /*-------------------------------------------
   -- Magnific Popup
 -------------------------------------------*/
+
 
 /* overlay at start */
 
@@ -2816,17 +2782,20 @@ D. Plugins Styles
     transition: all .15s ease-out;
 }
 
+
 /* overlay animate in */
 
 .mfp-fade.mfp-bg.mfp-ready {
     opacity: .8;
 }
 
+
 /* overlay animate out */
 
 .mfp-fade.mfp-bg.mfp-removing {
     opacity: 0;
 }
+
 
 /* content at start */
 
@@ -2835,11 +2804,13 @@ D. Plugins Styles
     transition: all .15s ease-out;
 }
 
+
 /* content animate it */
 
 .mfp-fade.mfp-wrap.mfp-ready .mfp-content {
     opacity: 1;
 }
+
 
 /* content animate out */
 
@@ -2847,11 +2818,13 @@ D. Plugins Styles
     opacity: 0;
 }
 
+
 /*-------------------------------------------
   -- Owl Carousel
 -------------------------------------------*/
 
-.owl-carousel .owl-stage, .owl-carousel .owl-stage-outer,
+.owl-carousel .owl-stage,
+.owl-carousel .owl-stage-outer,
 .owl-carousel .owl-item {
     height: 100%;
 }
@@ -2920,7 +2893,8 @@ D. Plugins Styles
     width: 2.5rem;
 }
 
-.owl-carousel .owl-nav .owl-prev:after, .owl-carousel .owl-nav .owl-next:after {
+.owl-carousel .owl-nav .owl-prev:after,
+.owl-carousel .owl-nav .owl-next:after {
     font-family: "Font Awesome\ 5 Free";
     font-weight: 900;
     font-size: 1.375rem;
@@ -2928,7 +2902,8 @@ D. Plugins Styles
     -webkit-font-smoothing: antialiased;
 }
 
-.owl-carousel .owl-nav .owl-prev:hover, .owl-carousel .owl-nav .owl-next:hover {
+.owl-carousel .owl-nav .owl-prev:hover,
+.owl-carousel .owl-nav .owl-next:hover {
     background-color: rgba(0, 0, 0, .8);
 }
 
@@ -2950,9 +2925,11 @@ D. Plugins Styles
     margin-right: .0625rem;
 }
 
+
 /***********************************************************************************************************************
 E. Template Specific Elements
 ***********************************************************************************************************************/
+
 
 /*-------------------------------------------
   -- Other
@@ -2982,95 +2959,83 @@ h1 a.ts-underline {
 @media (min-width: 75rem) {
     .ts-column-count-xl-1 {
         -webkit-column-count: 1;
-                column-count: 1;
+        column-count: 1;
     }
-
     .ts-column-count-xl-2 {
         -webkit-column-count: 2;
-                column-count: 2;
+        column-count: 2;
     }
-
     .ts-column-count-xl-3 {
         -webkit-column-count: 3;
-                column-count: 3;
+        column-count: 3;
     }
-
     .ts-column-count-xl-4 {
         -webkit-column-count: 4;
-                column-count: 4;
+        column-count: 4;
     }
 }
 
 @media (min-width: 62rem) and (max-width: 74.9375rem) {
     .ts-column-count-lg-1 {
         -webkit-column-count: 1;
-                column-count: 1;
+        column-count: 1;
     }
-
     .ts-column-count-lg-2 {
         -webkit-column-count: 2;
-                column-count: 2;
+        column-count: 2;
     }
-
     .ts-column-count-lg-3 {
         -webkit-column-count: 3;
-                column-count: 3;
+        column-count: 3;
     }
-
     .ts-column-count-lg-4 {
         -webkit-column-count: 4;
-                column-count: 4;
+        column-count: 4;
     }
 }
 
 @media (min-width: 48rem) and (max-width: 61.9375rem) {
     .ts-column-count-md-1 {
         -webkit-column-count: 1;
-                column-count: 1;
+        column-count: 1;
     }
-
     .ts-column-count-md-2 {
         -webkit-column-count: 2;
-                column-count: 2;
+        column-count: 2;
     }
-
     .ts-column-count-md-3 {
         -webkit-column-count: 3;
-                column-count: 3;
+        column-count: 3;
     }
-
     .ts-column-count-md-4 {
         -webkit-column-count: 4;
-                column-count: 4;
+        column-count: 4;
     }
 }
 
 @media (min-width: 36rem) and (max-width: 47.9375rem) {
     .ts-column-count-sm-1 {
         -webkit-column-count: 1;
-                column-count: 1;
+        column-count: 1;
     }
-
     .ts-column-count-sm-2 {
         -webkit-column-count: 2;
-                column-count: 2;
+        column-count: 2;
     }
-
     .ts-column-count-sm-3 {
         -webkit-column-count: 3;
-                column-count: 3;
+        column-count: 3;
     }
-
     .ts-column-count-sm-4 {
         -webkit-column-count: 4;
-                column-count: 4;
+        column-count: 4;
     }
 }
 
 @media (max-width: 35.9375rem) {
     [class*="ts-column-count-"] {
         -webkit-column-count: 1;
-                column-count: 1;
+        column-count: 1;
     }
 }
 
@@ -3078,43 +3043,37 @@ h1 a.ts-underline {
     #brand {
         left: 0;
     }
-
     #brand-navigation {
         left: 5.375rem;
         width: calc(100% - 5.375rem);
         background-color: transparent;
     }
-
     #brand-navigation .container {
         left: 0;
     }
-
     #main-navigation {
         -webkit-transform: translateX(0);
-                transform: translateX(0);
+        transform: translateX(0);
         width: auto;
     }
-
     #main-navigation .navbar {
         align-items: center;
         width: 5.375rem;
         padding-top: 0;
     }
-
     .ts-content {
         position: relative;
         left: 5.375rem;
         width: calc(100% - 5.375rem);
         transition: .5s cubic-bezier(.77, 0, .18, 1);
         -webkit-transform: translateX(0);
-                transform: translateX(0);
+        transform: translateX(0);
     }
-
-    body.nav-hovered .ts-content, body.nav-hovered #brand-navigation {
+    body.nav-hovered .ts-content,
+    body.nav-hovered #brand-navigation {
         -webkit-transform: translateX(4rem);
-                transform: translateX(4rem);
+        transform: translateX(4rem);
     }
-
     body.nav-hovered #main-navigation .navbar {
         width: 25rem;
     }

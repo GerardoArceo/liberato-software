@@ -12,22 +12,22 @@ app.use(express.static(__dirname + '/../public'));
 hbs.registerPartials(__dirname + '/../views/parcials');
 app.set('view engine', 'hbs');
 
-app.get('/home', (req, res) => res.render('home', {
+app.get('/home', (req, res) => res.render('pages/home', {
     activeIndex: 0,
 }));
-app.get('/development', (req, res) => res.render('development', {
+app.get('/development', (req, res) => res.render('pages/development', {
     title: 'Desarrollo LS',
     activeIndex: 0,
 }));
-app.get('/team', (req, res) => res.render('team', {
+app.get('/team', (req, res) => res.render('pages/team', {
     title: 'Equipo LS',
     activeIndex: 1,
 }));
-app.get('/contact', (req, res) => res.render('contact', {
+app.get('/contact', (req, res) => res.render('pages/contact', {
     title: 'Contacto LS',
     activeIndex: 1,
 }));
-app.get('/blog', (req, res) => res.render('blog', {
+app.get('/blog', (req, res) => res.render('pages/blog', {
     title: 'Blog LS',
     activeIndex: 2,
 }));
@@ -78,7 +78,7 @@ app.get('*', (req, res) => {
             activeIndex: 1,
         });
     else
-        res.render('home', {
+        res.render('pages/home', {
             activeIndex: 0,
         });
 });
