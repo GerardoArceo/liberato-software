@@ -1,0 +1,244 @@
+{{> head }}
+
+<header id="ts-hero" class="ts-block ts-has-overlay text-white">
+    <div class="container pt-2 pt-sm-5 pt-lg-0">
+        <h1>Algoritmos Genéticos</h1>
+        <h3>En 15 minutos</h3>
+    </div>
+    <div class="ts-background" data-bg-parallax="scroll" data-bg-parallax-speed="3">
+        <div class="ts-background-image ts-img-into-bg ts-parallax-element">
+            <img src="blog/genetics.jpg" alt="">
+        </div>
+    </div>
+</header>
+
+<!--MAIN CONTENT
+================================================================================================================
+================================================================================================================
+-->
+<main id="ts-content">
+
+    <!--Description
+    ============================================================================================================
+    -->
+    <section class="ts-block pb-0">
+        <div class="container">
+            <article class="blog-post">
+                <figure class="meta">
+                    <div class="tags">
+                        <a class="tag article">Inteligencia Artificial</a>
+                        <a class="tag article">Algoritmos Bioinspirados</a>
+                        <a class="tag article">Computación Evolutiva</a>
+                    </div>
+                </figure>
+            </article>
+
+            <div class="ts-title">
+                <h2>¿Qué son los Algoritmos Genéticos?</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <p class="text-justify">
+                        Son un tipo especial de algoritmos cuyo comportamiento está inspirado en la evolución biológica, son una de las ramas más prometedoras de la Inteligencia Artificial.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <dl class="ts-description-list">
+                        <dt>Autor</dt>
+                        <dd><a href="https://gerardoarceo.com" class="ts-underline">Gerardo Arceo</a></dd>
+                        <dt>Código de ejemplo</dt>
+                        <dd><a href="https://github.com/GerardoArceo/genetic-algorithms-trilateration/tree/master" class="ts-underline">Repositorio en Github</a></dd>
+                    </dl>
+                </div>
+            </div>
+
+            <div class="ts-title">
+                <h2>¿Para qué sirven?</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <p class="text-justify">Para encontrar soluciones a problemas en dónde las metodologías tradicionales se vuelven extremadamente complejas, desde resolver un sistema de múltiples ecuaciones hasta poder construir robots que se comporten cómo humanos</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="approach" class="ts-block pb-0">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-8">
+                    <img src="blog/bioterrorism.jpg" class="img-fluid mb-5" alt="">
+                </div>
+
+                <div class="col-md-4">
+                    <div class="ts-title">
+                        <h2>Ejemplo de uso</h2>
+                    </div>
+                    <p class="text-justify">
+                        Supongamos que somos un grupo bioterrorista y queremos crear en nuestro laboratorio un nuevo virus lo más letal posible, sólo necesitamos definir su estructura de ADN, el problema radica en que no sabemos qué genes debe contener dicha cadena para que el virus sea tan letal cómo lo queremos
+                    </p>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="ts-title">
+                    <h2>Solución inicial</h2>
+                </div>
+                <p class="text-justify">
+                    Generamos aleatoriamente una cadena de ADN, las propiedades de nuestro virus estarán determinadas por los genes contenidos en dicha cadena, si nuestro virus no es lo suficientemente letal simplemente creamos uno nuevo.
+                </p>
+                <div class="ts-title">
+                    <h2>Problema inicial</h2>
+                </div>
+                <p class="text-justify">
+                    Podríamos generar millones de virus aleatoriamente, pero hay tantas posibles combinaciones de genes, que la probabilidad de que un virus creado por casualidad sea tan letal cómo lo queremos, es extremadamente baja, es por esto que haremos uso de algoritmos genéticos para resolver el problema.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--Blockquote
+    ============================================================================================================
+    -->
+    <section id="blockquote">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-9 offset-3">
+                    <blockquote class="blockquote p-5 ts-background-repeat" data-bg-image="assets/img/bg__pattern--dot.png">
+                        <h4 class="font-weight-light">¿Por qué usar Algoritmos Genéticos (AG)?</h4>
+                        <footer class="blockquote-footer text-justify">
+                            Es extremadamente complejo saber exactamente qué genes modificar de la cadena de ADN del virus para volverlo más letal, por lo que estamos ante un problema en el cual podemos medir la efectividad de cada una de sus posibles soluciones pero no tenemos ni idea de cómo generar mejores soluciones, los AG son perfectos para este tipo de problemas.
+                        </footer>
+                    </blockquote>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <img src="blog/ia.jpg" alt="" class="img-fluid">
+        </div>
+    </section>
+
+    <section id="one-concept" class="ts-block">
+        <div class="container">
+            <div class="row">
+                <div class="ts-title">
+                    <h2>Creación de un virus letal</h2>
+                </div>
+                <p class="mb-5 text-justify">
+                    El funcionamiento general de un AG es bastante intuitivo, simplemente estamos replicando el proceso natural de la evolución, partimos de una solución inicial y se podría decir que la "evolucionamos" hasta que se vuelve lo suficientemente buena, veamos a grandes rasgos cuáles son los pasos a seguir para la creación de nuestro virus:
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul>
+                        <li class="text-justify">1. Generamos aleatoriamente algunos virus, aunque todos parezcan muy ineficientes porque fueron producto del azar, hay algunos mejores que otros</li>
+                        <br>
+                        <li class="text-justify">2. Seleccionamos a los mejores virus según su letalidad y aunque sea cruel, nos deshacemos de los individuos más débiles</li>
+                        <br>
+                        <li class="text-justify">3. Para mantener constante el número de virus de cada población, repoblaremos con nuevos virus, pero esta vez en lugar de generarlos aleatoriamente, los generamos a partir de nuestra excelente selección de virus (puede ser por cruza, por mutación o por cualquier otro método biológico), así los mejores genes se van a heredar a la siguiente generación</li>
+                        <br>
+                        <li class="text-justify">4. Repetimos el proceso de selección y generación de virus varias veces, de esta forma en cada generación se van a ir mejorando los genes y por ende, la letalidad viral</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6">
+                    <img src="blog/genetics_diagram.png" class="img-fluid mb-5" alt="">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="ts-block">
+        <div class="ts-background" data-bg-parallax="scroll" data-bg-parallax-speed="3">
+            <div class="ts-background-image ts-img-into-bg ts-parallax-element">
+                <img src="blog/virus.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="ts-block text-center">
+        <div class="container">
+
+            <div class="ts-title">
+                <h2>¿Cómo se programa todo esto?</h2>
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-6 offset-sm-3">
+                    <p class="mb-5 text-justify">
+                        Entendiendo el funcionamiento general de los AG, es muy sencillo programarlos, por conveniencia trabajaremos con cadenas binarias (por ejemplo 101000101), de esta forma nuestro programa además de ser muy rápido, podrá generar fácilmente nuevos virus a partir de otros existentes
+                    </p>
+                </div>
+
+                <div class="col-md-6">
+                    <h4>¿Cómo representamos una cadena de ADN con 1's y 0's?</h4>
+                    <p class="text-justify">
+                        Una cadena de ADN está compuesta por 4 bases nitrogenadas (Timina, Citosina, Adenina y Guanina), lo que determinará las propiedades de los virus es el orden y aparición de dichas bases.
+                    </p>
+                    <p class="text-justify">
+                        Por ejemplo, la cadena de ADN "TCAGTCAGTCAGTCAG" podría representar a un virus extremadamente letal, mientras que la cadena "GCACACAGTTAGTGAC" representar a un virus muy poco letal, pero no lo sabremos hasta medir sus respectivas letalidades.
+                    </p>
+                    <p class="text-justify">
+                        Para representar un virus en forma binaria, basta con asignarle un valor binario a cada una de las bases nitrogenadas, por ejemplo:
+                    </p>
+                    <ul>
+                        <li>Timina (T) = 00</li>
+                        <li>Citosina (C) = 01</li>
+                        <li>Adenina (A) = 10</li>
+                        <li>Guanina (G) = 11</li>
+                    </ul>
+                    <p>De esta forma nuestra cadena de ADN "TCAGTCAGTCAGTCAG", tendría una representación binaria de "00011011000110110001101100011011", gracias a esta representación, basta con modificar uno de sus bits para crear un nuevo virus</p>
+                </div>
+
+                <div class="col-md-6">
+                    <h4>¿Cómo generamos nuevos virus que hereden los mejores genes?</h4>
+                    <p class="text-justify">
+                        Supongamos que tenemos cierto virus cuya representación es "10010", sin nosotros saberlo, la letalidad de dicho virus radica en que su primer bit es "1", al ser nuestro mejor virus lo utilizaremos para generar nuevos virus que pasarán a la siguiente generación
+                    </p>
+                    <p class="text-justify">
+                        Una de las formas en las que generamos un nuevo individuo a partir de otro existente, es a través de la mutación, consiste en cambiar el valor de uno de los bits de la cadena, así obtendremos un nuevo virus ligeramente distinto al original, puede que la mutación lo mejore o lo empeore, pero no lo sabremos hasta que midamos su letalidad, por ejemplo:
+                    </p>
+                    <ul>
+                        <li>Mutación del bit 1 = 00010 -> La mutación lo volvió ineficiente</li>
+                        <li>Mutación del bit 5 = 10011 -> La mutación lo volvió más eficiente</li>
+                    </ul>
+                    <p class="text-justify">
+                        No tenemos que preocuparnos porque una mutación sea contraproducente, si este es el caso, el individuo simplemente se morirá en la siguiente generación por ser poco letal, pero tanto su padre cómo su hermano (al que si le benefició la mutación) podrán sobrevivir y tendrán la oportunidad seguir transmitiendo sus genes a futuras generaciones
+                    </p>
+                </div>
+
+            </div>
+
+            <br><br>
+            <div class="ts-title">
+                <h2>Conclusión</h2>
+            </div>
+            <div class="row">
+                <p class="text-justify">
+                    Entre mayor sea el número de individuos por población y mayor sea el número de generaciones, mayor será la probabilidad de conseguir un virus realmente letal, con esto demostramos cómo los AG pueden utilizarse para resolver problemas complejos sin necesidad de entender completamente la propia naturaleza del propio problema (en este caso, no fue ni siquiera necesario entender por qué al modificar cierto gen, el virus se volvía más o menos letal), bastó con haber planteado un modelo en el cuál las soluciones se van mejorando iterativamente y de forma automatizada hasta alcanzar el resultado deseado.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="text-center">
+            <a href="blog" class="btn btn-outline-dark">Regresar</a>
+        </div>
+    </div>
+    <br>
+
+</main>
+
+
+
+{{> footer }}

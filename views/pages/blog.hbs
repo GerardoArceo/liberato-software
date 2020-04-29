@@ -1,24 +1,57 @@
 {{> head }}
-
-<header id="ts-hero" class="ts-block">
-
-    <div class="container pt-2 pt-sm-5 pt-lg-0">
-        <div class="ts-title mb-0">
-            <h1>Blog</h1>
+<div data-bg-color="#0c0c0c">
+    <header id="ts-hero" class="ts-block text-white pb-0">
+        <div class="container">
+            <h1 data-animate="ts-reveal">
+                <span class="wrapper">
+                    <span>Blog</span>
+                </span>
+            </h1>
+            <h4 data-animate="ts-reveal">
+                <span class="wrapper">
+                    <span>Liberato Software</span>
+                </span>
+            </h4>
         </div>
-    </div>
+    </header>
 
-</header>
+    <main id="ts-content" class="text-white">
 
-<section id="blockquote" class="ts-block text-center ts-background-repeat" data-bg-image="assets/img/bg__pattern--topo.png">
-    <div class="container">
+        <section id="works" class="ts-block pb-5">
+            <div class="container">
 
-        <blockquote class="blockquote">
-            <h2>Próximamente...</h2>
-            <footer class="blockquote-footer">Gracias por existir</footer>
-        </blockquote>
+                <div class="ts-title">
+                    <h3>Entradas</h3>
+                </div>
 
-    </div>
-</section>
+                <div class="row ts-gallery">
+
+                    <div class="col-md-6">
+                        <div class="ts-group">
+                            <a href="blog/genetics" class="card ts-gallery__item mb-3">
+                                <div class="ts-background ts-img-into-bg">
+                                    <img src="blog/genetics.jpg" alt="">
+                                </div>
+                            </a>
+                            <div class="ts-gallery__item-description">
+                                <h5 class="mb-0">
+                                    <a href="#">Algoritmos Genéticos</a>
+                                </h5>
+                                <small class="ts-opacity__50">En 15 minutos</small>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="text-center my-5 py-5">
+                    <a onclick="alert('Ya es todo, pides demasiado :(')" class="btn btn-outline-light">Mostrar todo</a>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+</div>
 
 {{> footer }}

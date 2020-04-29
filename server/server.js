@@ -31,6 +31,10 @@ app.get('/blog', (req, res) => res.render('pages/blog', {
     title: 'Blog LS',
     activeIndex: 2,
 }));
+app.get('/blog/genetics', (req, res) => res.render('blog/genetics', {
+    title: 'Algoritmos Genéticos',
+    activeIndex: 2,
+}));
 
 app.get('/projects/piase', (req, res) => res.render('projects/piase', {
     title: 'PIASE',
