@@ -83,38 +83,37 @@
 
             </div>
             <div class="row">
-                <div class="ts-title">
-                    <h2>Solución inicial</h2>
+                <div class="col-md-6">
+                    <div class="ts-title">
+                        <h2>Solución inicial</h2>
+                    </div>
+                    <p class="text-justify">
+                        Generamos aleatoriamente una cadena de ADN, las propiedades de nuestro virus estarán determinadas por los genes contenidos en dicha cadena, si nuestro virus no es lo suficientemente letal simplemente creamos uno nuevo, repetimos este proceso las veces que sean necesarias.
+                    </p>
                 </div>
-                <p class="text-justify">
-                    Generamos aleatoriamente una cadena de ADN, las propiedades de nuestro virus estarán determinadas por los genes contenidos en dicha cadena, si nuestro virus no es lo suficientemente letal simplemente creamos uno nuevo.
-                </p>
-                <div class="ts-title">
-                    <h2>Problema inicial</h2>
+                <div class="col-md-6">
+                    <div class="ts-title">
+                        <h2>Problema inicial</h2>
+                    </div>
+                    <p class="text-justify">
+                        Podríamos generar millones de virus aleatoriamente, pero hay tantas posibles combinaciones de genes, que la probabilidad de que un virus creado por casualidad sea tan letal cómo lo queremos, es extremadamente baja, es por esto que haremos uso de algoritmos genéticos para resolver el problema.
+                    </p>
                 </div>
-                <p class="text-justify">
-                    Podríamos generar millones de virus aleatoriamente, pero hay tantas posibles combinaciones de genes, que la probabilidad de que un virus creado por casualidad sea tan letal cómo lo queremos, es extremadamente baja, es por esto que haremos uso de algoritmos genéticos para resolver el problema.
-                </p>
             </div>
         </div>
     </section>
 
-    <!--Blockquote
-    ============================================================================================================
-    -->
     <section id="blockquote">
         <div class="container">
             <div class="row">
-
                 <div class="col-md-9 offset-3">
                     <blockquote class="blockquote p-5 ts-background-repeat" data-bg-image="assets/img/bg__pattern--dot.png">
                         <h4 class="font-weight-light">¿Por qué usar Algoritmos Genéticos (AG)?</h4>
                         <footer class="blockquote-footer text-justify">
-                            Es extremadamente complejo saber exactamente qué genes modificar de la cadena de ADN del virus para volverlo más letal, por lo que estamos ante un problema en el cual podemos medir la efectividad de cada una de sus posibles soluciones pero no tenemos ni idea de cómo generar mejores soluciones, los AG son perfectos para este tipo de problemas.
+                            Es extremadamente complejo saber exactamente qué genes modificar de la cadena de ADN del virus para volverlo más letal, por lo que estamos ante un problema en el cual podemos medir la efectividad de cada una de sus posibles soluciones pero no tenemos ni idea de cómo generar mejores soluciones, a continuación explicaremos cómo resolver este problema utilizando AG y veremos qué los hace tan efectivos.
                         </footer>
                     </blockquote>
                 </div>
-
             </div>
         </div>
     </section>
@@ -217,15 +216,28 @@
                 </div>
 
             </div>
+        </div>
+    </section>
 
-            <br><br>
-            <div class="ts-title">
-                <h2>Conclusión</h2>
+     <section class="ts-block">
+        <div class="ts-background" data-bg-parallax="scroll" data-bg-parallax-speed="3">
+            <div class="ts-background-image ts-img-into-bg ts-parallax-element">
+                <img src="blog/binary.jpg" alt="">
             </div>
+        </div>
+    </section>
+
+    <section class="ts-block text-center">
+        <div class="container">
             <div class="row">
-                <p class="text-justify">
-                    Entre mayor sea el número de individuos por población y mayor sea el número de generaciones, mayor será la probabilidad de conseguir un virus realmente letal, con esto demostramos cómo los AG pueden utilizarse para resolver problemas complejos sin necesidad de entender completamente la propia naturaleza del propio problema (en este caso, no fue ni siquiera necesario entender por qué al modificar cierto gen, el virus se volvía más o menos letal), bastó con haber planteado un modelo en el cuál las soluciones se van mejorando iterativamente y de forma automatizada hasta alcanzar el resultado deseado.
-                </p>
+                <div class="col-md-9 offset-3">
+                    <blockquote class="blockquote p-5 ts-background-repeat" data-bg-image="assets/img/bg__pattern--dot.png">
+                        <h4 class="font-weight-light">Conclusión</h4>
+                        <p class="text-justify">
+                            Entre mayor sea el número de individuos por población y mayor sea el número de generaciones, mayor será la probabilidad de conseguir un virus realmente letal, con esto demostramos cómo los AG pueden utilizarse para resolver problemas complejos sin necesidad de entender completamente la propia naturaleza del propio problema (en este caso, no fue ni siquiera necesario entender por qué al modificar cierto gen, el virus se volvía más o menos letal), bastó con haber planteado un modelo en el cuál las soluciones se van mejorando iterativamente y de forma automatizada hasta alcanzar el resultado deseado.
+                        </p>
+                    </blockquote>
+                </div>
             </div>
         </div>
     </section>
