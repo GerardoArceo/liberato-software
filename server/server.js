@@ -6,19 +6,10 @@ require('./hbs/helpers');
 
 const port = 3000;
 
-app.use(express.static(__dirname + '/public'));
-
-app.engine('hbs', hbs({
-    extname: 'hbs',
-    defaultLayout: 'base',
-    layoutsDir: path.join(__dirname, 'views/public'),
-    partialsDir: [
-        path.join(__dirname, 'views/partials'),
-    ]
-}));
+app.use(express.static(__dirname + '/../public'));
 
 // Express HBS engine
-hbs.registerPartials(__dirname + '/views/parcials');
+hbs.registerPartials(__dirname + '/../views/parcials');
 app.set('view engine', 'hbs');
 
 app.get('/home', (req, res) => res.render('pages/home', {
