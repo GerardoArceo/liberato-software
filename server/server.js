@@ -9,7 +9,7 @@ const port = 3000;
 app.use(express.static(__dirname + '/public'));
 
 // Express HBS engine
-hbs.registerPartials(__dirname + '/views/parcials');
+hbs.registerPartials(__dirname + '/server/views/parcials');
 app.set('view engine', 'hbs');
 
 app.get('/home', (req, res) => res.render('pages/home', {
