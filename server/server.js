@@ -73,6 +73,10 @@ app.get('/pamelaperez', (req, res) => res.render('team/pamelaperez', {
     title: 'Pamela Pérez',
     activeIndex: 1,
 }));
+app.get('/fernandoflores', (req, res) => res.render('team/fernandoflores', {
+    title: 'Fernando Flores',
+    activeIndex: 1,
+}));
 
 app.get('*', (req, res) => {
     const host = req.headers.host;
