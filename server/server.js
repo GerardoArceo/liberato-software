@@ -61,6 +61,10 @@ app.get('/gerardoarceo', (req, res) => res.render('team/gerardoarceo', {
     title: 'Gerardo Arceo',
     activeIndex: 1,
 }));
+app.get('/nadialopez', (req, res) => res.render('team/nadialopez', {
+    title: 'Nadia López',
+    activeIndex: 1,
+}));
 app.get('/lilianarceo', (req, res) => res.render('team/lilianarceo', {
     title: 'Lilián Arceo',
     activeIndex: 1,
