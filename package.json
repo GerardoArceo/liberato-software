@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "start": "node server.js",
-        "nodemon": "nodemon server.js",
+        "nodemon": "nodemon server/server.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "",
@@ -13,6 +13,7 @@
     "dependencies": {
         "express": "^4.16.2",
         "hbs": "^4.1.0",
-        "http-server": "^0.12.1"
+        "http-server": "^0.12.1",
+        "nodemon": "^2.0.12"
     }
 }
