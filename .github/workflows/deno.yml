@@ -1,0 +1,24 @@
+name: Deno
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+    - name: executing remote ssh commands using password
+      uses: appleboy/ssh-action@master
+      with:
+        host: "34.230.148.142"
+        username: "bitnami"
+        key: ${{ secrets.LIGHTSAILDEFAULTKEY }}
+        port: 22
+        script: |
+          cd liberato-software
+          sudo git pull
+          pm2 restart liberato-software
+          sudo systemctl restart nginx
+          echo 'OK'
