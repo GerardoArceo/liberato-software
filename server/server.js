@@ -88,6 +88,7 @@ app.get('*', (req, res) => {
         res.render('team/gerardoarceo', {
             title: 'Gerardo Arceo',
             activeIndex: 1,
+            hideLiberatoSoftware: true,
         });
     else
         res.render('pages/home', {

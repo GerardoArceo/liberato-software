@@ -18,6 +18,11 @@
 </head>
 <body class="has-loading-screen">
     <div class="ts-page-wrapper">
-        {{> brandlogo }}
-        {{> leftnavigator }}
+        {{#if hideLiberatoSoftware}}
+            {{> leftnavigatorpersonal }}
+        {{else}}
+            {{> brandlogo }}
+            {{> leftnavigator }}
+        {{/if}}
+
         <div class="ts-content">
