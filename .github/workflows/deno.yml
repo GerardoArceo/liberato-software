@@ -12,11 +12,12 @@ jobs:
     - name: executing remote ssh commands using password
       uses: appleboy/ssh-action@master
       with:
-        host: "34.230.148.142"
-        username: "bitnami"
-        key: ${{ secrets.LIGHTSAILDEFAULTKEY }}
+        host: "54.88.121.207"
+        username: "ubuntu"
+        key: ${{ secrets.EC2KEY }}
         port: 22
         script: |
+
           cd liberato-software
           sudo git pull
           pm2 restart liberato-software
