@@ -18,10 +18,11 @@
 </head>
 <body class="has-loading-screen">
     <div class="ts-page-wrapper">
-        {{> brandlogo }}
         {{#if hideLiberatoSoftware}}
+            {{> brandlogopersonal }}
             {{> leftnavigatorpersonal }}
         {{else}}
+            {{> brandlogo }}
             {{> leftnavigator }}
         {{/if}}
 
